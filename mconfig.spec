@@ -6,9 +6,11 @@ Release:	1
 License:	GPL
 Group:		Base/Kernel
 Source0:	ftp://ftp.kernel.org/pub/linux/kernel/people/hch/mconfig/%{name}-%{version}.tar.bz2
+Patch0:		%{name}-no_curses.patch
 URL:		ftp://ftp.openlinux.org/pub/people/hch/mconfig/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -21,14 +23,18 @@ kompilacji j±dra Linuksa. Oferuje ró¿ne dziwne tryby.
 
 %prep
 %setup -q -b 0
+%patch0 -p1
 
 %build
+cp -f /usr/share/automake/{config.*,depcomp,missing} .
+aclocal
 %{__autoconf}
 %configure
-%{__make} CFLAGS="%{rpmcflags}"
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 %clean
