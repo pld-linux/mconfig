@@ -27,7 +27,7 @@ kompilacji j±dra Linuksa. Oferuje ró¿ne dziwne tryby.
 
 %build
 cp -f /usr/share/automake/{config.*,depcomp,missing} .
-aclocal
+%{__aclocal}
 %{__autoconf}
 %configure
 %{__make}
