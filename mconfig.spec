@@ -5,8 +5,6 @@ Version:	0.20
 Release:	1
 License:	GPL
 Group:		Base/Kernel
-Group(de):	Grundsätzlich/Kern
-Group(pl):	Podstawowe/J±dro
 Source0:	ftp://ftp.kernel.org/pub/linux/kernel/people/hch/mconfig/%{name}-%{version}.tar.bz2
 URL:		ftp://ftp.openlinux.org/pub/people/hch/mconfig/
 BuildRequires:	autoconf
