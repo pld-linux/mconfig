@@ -1,0 +1,12 @@
+--- mconfig-0.20/configure.in~	Tue Jul 23 17:56:36 2002
++++ mconfig-0.20/configure.in	Tue Jul 23 17:56:36 2002
+@@ -10,9 +10,6 @@
+ AC_PROG_INSTALL
+ AC_PROG_LN_S
+ 
+-dnl Checks for libraries.
+-AC_CHECK_LIB(curses, addstr)
+-
+ dnl Checks for header files.
+ AC_HEADER_STDC
+ AC_CHECK_HEADERS(fcntl.h unistd.h)
