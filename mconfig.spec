@@ -23,7 +23,7 @@ kompilacji j±dra Linuksa. Oferuje ró¿ne dziwne tryby.
 %setup -q -b 0
 
 %build
-autoconf
+%{__autoconf}
 %configure
 %{__make} CFLAGS="%{rpmcflags}"
 
