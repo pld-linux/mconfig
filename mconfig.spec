@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Base/Kernel
 Source0:	ftp://ftp.kernel.org/pub/linux/kernel/people/hch/mconfig/%{name}-%{version}.tar.bz2
+# Source0-md5:	72955d9a3f64ad6d75658474065a16b8
 Patch0:		%{name}-no_curses.patch
 URL:		ftp://ftp.openlinux.org/pub/people/hch/mconfig/
 BuildRequires:	autoconf
