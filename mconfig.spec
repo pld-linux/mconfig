@@ -31,13 +31,11 @@ kompilacji j±dra Linuksa. Oferuje ró¿ne dziwne tryby.
 rm -rf $RPM_BUILD_ROOT
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf AUTHORS INSTALL NEWS README ChangeLog doc/CHANGES.mec doc/TODO.mec
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc AUTHORS NEWS README ChangeLog doc/CHANGES.mec doc/TODO.mec
 %attr(755,root,root) %{_bindir}/mconfig
 %{_mandir}/man1/*
-%doc {AUTHORS,INSTALL,NEWS,README,ChangeLog,doc/CHANGES.mec,doc/TODO.mec}.gz
