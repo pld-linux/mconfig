@@ -2,7 +2,7 @@ Summary:	Tool to configure the linux kernel
 Summary(pl):	Narzêdzie do konfiguracji j±dra Linuksa
 Name:		mconfig
 Version:	0.20
-Release:	1
+Release:	2
 License:	GPL
 Group:		Base/Kernel
 Source0:	ftp://ftp.kernel.org/pub/linux/kernel/people/hch/mconfig/%{name}-%{version}.tar.bz2
