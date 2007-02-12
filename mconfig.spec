@@ -1,5 +1,5 @@
 Summary:	Tool to configure the linux kernel
-Summary(pl):	Narzêdzie do konfiguracji j±dra Linuksa
+Summary(pl.UTF-8):   NarzÄ™dzie do konfiguracji jÄ…dra Linuksa
 Name:		mconfig
 Version:	0.20
 Release:	3
@@ -18,9 +18,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This tool is used to create configuration file for compiling a Linux
 kernel. It offers various different modes.
 
-%description -l pl
-To narzêdzie jest u¿ywane do tworzenia pliku konfiguracyjnego do
-kompilacji j±dra Linuksa. Oferuje ró¿ne dziwne tryby.
+%description -l pl.UTF-8
+To narzÄ™dzie jest uÅ¼ywane do tworzenia pliku konfiguracyjnego do
+kompilacji jÄ…dra Linuksa. Oferuje rÃ³Å¼ne dziwne tryby.
 
 %prep
 %setup -q -b 0
