@@ -1,5 +1,5 @@
 Summary:	Tool to configure the linux kernel
-Summary(pl.UTF-8):   Narzędzie do konfiguracji jądra Linuksa
+Summary(pl.UTF-8):	Narzędzie do konfiguracji jądra Linuksa
 Name:		mconfig
 Version:	0.20
 Release:	3
